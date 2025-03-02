@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-- https://www.reddit.com/r/denshya/
+Follow discussions here: https://t.me/denshya
 
 
 ## Issues that require attention
