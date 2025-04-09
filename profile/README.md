@@ -11,6 +11,12 @@ Whether you're just starting or already have experience, we invite you to join u
 
 New technologies, best practices, and undiscovered gems waiting to be found.
 
+## For Developers
+
+If you want to contibute with your ideas or help with coding - awesome, connect and let's get busy!
+
+[Discord Community](https://discord.gg/sHp2pxrSws)
+
 ## Issues that require attention
 - https://github.com/microsoft/TypeScript/issues/42033#issuecomment-2394949984
 - https://github.com/tc39/proposal-operator-overloading
