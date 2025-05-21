@@ -20,6 +20,8 @@ If you want to contibute with your ideas or help with coding - awesome, connect 
 ## Issues that require attention
 - https://github.com/microsoft/TypeScript/issues/42033#issuecomment-2394949984
 - https://github.com/tc39/proposal-operator-overloading
-- https://github.com/tc39/proposal-observable
+- https://github.com/tc39/proposal-observable - Was pushed to web by WICG.
 - https://github.com/tc39/proposal-pipeline-operator
 - https://github.com/tc39/proposal-structs
+- https://github.com/whatwg/dom/issues/736
+- https://github.com/whatwg/dom/issues/533
