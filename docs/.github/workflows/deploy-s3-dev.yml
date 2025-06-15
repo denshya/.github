@@ -1,0 +1,41 @@
+name: Deploy to S3 | Development Preview
+
+on:
+  release:
+    types:
+      - prereleased
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: DEV
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun i --silent
+
+      - name: Build project
+        run: bun run build
+        env:
+          VITE_CMS_BASE_URL: ${{ vars.CMS_BASE_URL }}
+          VITE_GA_MEASUREMENT_ID: ${{ vars.GA_MEASUREMENT_ID }}
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Deploy to S3
+        run: aws s3 sync ./build s3://${{ vars.S3_BUCKET_NAME }} --delete

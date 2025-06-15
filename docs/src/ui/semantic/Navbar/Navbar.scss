@@ -1,0 +1,74 @@
+@use "@/assets/scss/bundle" as *;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+
+  @include Mobile {
+    display: none;
+  }
+}
+
+.navbar__link {
+  padding: 0.375em 0.5em;
+  border: 1px dashed transparent;
+  border-radius: 0.25em;
+
+  font-weight: 500;
+
+  transition: 250ms ease background-color, 250ms ease border-color;
+
+  &:hover {
+    background: rgb(202, 174, 222);
+    color: rgb(39, 3, 3);
+    // border-bottom-color: rgba(#2B093C, 0.5);
+  }
+
+  &--active {
+    font-weight: bold;
+
+    color: #2B093C;
+    border-color: rgba(#2B093C, 0.25);
+  }
+}
+
+a.navbar__link {
+  text-decoration: none;
+}
+
+
+
+.mobile-navbar {
+  position: fixed;
+  top: 4vh;
+  left: 0;
+  bottom: 4vh;
+
+  width: 15em;
+
+  display: grid;
+  gap: 0.5em;
+  align-content: baseline;
+
+  padding: 1em;
+
+  overflow: auto;
+  animation: 500ms ease SlideIn forwards;
+
+  .navbar__link {
+    padding: 0.75em 1em;
+  }
+}
+
+@keyframes SlideIn {
+  from {
+    opacity: 0.25;
+    transform: translateX(-50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

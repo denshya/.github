@@ -1,0 +1,60 @@
+{
+  "totalRating": 5,
+  "totalReviews": 9,
+  "reviews": [
+    {
+      "rating": 5,
+      "author": "CEO, Real Info Box",
+      "verified": true,
+      "content": "\"They possess a remarkable ability to translate our real-world business needs into adept technical solutions.\""
+    },
+    {
+      "rating": 5,
+      "author": "Business Analyst, Cloud Technologies Firm",
+      "verified": true,
+      "content": "\"We continue to achieve great results with Pinely International.\""
+    },
+    {
+      "rating": 5,
+      "author": "DevOps Engineer, Technology Company",
+      "verified": true,
+      "content": "''I envisioned something, and Pinely International's team has levitated that vision to the next level.''"
+    },
+    {
+      "rating": 5,
+      "author": "Owner, Stream",
+      "verified": true,
+      "content": "\"The team has been able to communicate directly and effectively with customers.\""
+    },
+    {
+      "rating": 5,
+      "author": "Software Engineer Lead, Mental Health Clinic",
+      "verified": true,
+      "content": "\"Overall, project management has been extremely agile and responsive to my personal needs.\""
+    },
+    {
+      "rating": 5,
+      "author": "CEO, Privacy Lock",
+      "verified": true,
+      "content": "\"They operate in multiple time zones, communicate very effectively, and produce high-quality technical work.\""
+    },
+    {
+      "rating": 5,
+      "author": "CEO, miniParent",
+      "verified": true,
+      "content": "\"I wholeheartedly recommend them to any company in need of app development.\""
+    },
+    {
+      "rating": 5,
+      "author": "CEO, IT & IoT Company",
+      "verified": true,
+      "content": "\"Migration was fast and successful.\""
+    },
+    {
+      "rating": 5,
+      "author": "Founder, The Better Agent",
+      "verified": false,
+      "content": "''Everything worked out very smoothly.''"
+    }
+  ]
+}
